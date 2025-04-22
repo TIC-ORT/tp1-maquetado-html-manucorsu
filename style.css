@@ -2,10 +2,18 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /*Esto es obviamente autocompletado de vscode*/
 }
 
 body {
   background-color: white;
+}
+
+.padre-flex{
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -17,11 +25,61 @@ header {
   background-color: #ff9978;
 }
 
-.inputSearch{
+.inputSearch {
   height: 23px;
+  width: 300px;
 }
-.btnSubmitSearch{
+.btnSubmitSearch {
   margin-left: 3px;
   width: 25px;
   height: 24 px;
 }
+
+main {
+  background-color: #f2f2f2;
+  padding-left: 2em;
+  width: 75em;
+}
+
+.info-video {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  padding-left: 25px;
+}
+
+.titulo-rojo {
+  background-color: #fe9978;
+  width: fit-content; /*sin esto el fondo se iba a la derecha hasta el infinito no sé por qué */
+  font-size: large; /*large sigue siendo más chico que el default de h1*/
+}
+.descripcion {
+  font-size: 15px;
+  text-align: center;
+  padding-right: 50px;
+}
+
+.comentarios {
+  display: flex;
+  flex-direction: column;
+}
+
+.comentario{
+  display: flex;
+  flex-direction: row;
+}
+
+.texto-comentario{
+  display: flex;
+  flex-direction: inline;
+}
+
+.cuadrado {
+  width: 64px;
+  height: 64px;
+  background-color: #ff00ff;
+}
+
+.celeste {
+  background-color: #abe0e5;
+} /*Combinados hacen "cuadrado celeste*/
