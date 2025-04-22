@@ -37,8 +37,8 @@ header {
 
 main {
   background-color: #f2f2f2;
-  padding-left: 2em;
-  width: 75em;
+  margin-left: 2em;
+  width: 70em;
 }
 
 .info-video {
@@ -62,21 +62,25 @@ main {
 .comentarios {
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
 }
 
 .comentario {
   display: flex;
   flex-direction: row;
+  padding-bottom: 10px;
 }
 
 .texto-comentario {
   display: flex;
   flex-direction: inline;
+  padding-left: 10px;
 }
 
 .cuadrado {
   width: 64px;
   height: 64px;
+  padding-right: 64px;
   background-color: #ff00ff;
 }
 
