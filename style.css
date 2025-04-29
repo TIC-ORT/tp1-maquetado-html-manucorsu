@@ -13,7 +13,7 @@ body {
 
 .padre-flex {
   display: flex;
-  flex-direction: column;
+  flex-direction: inline;
 }
 
 header {
@@ -32,7 +32,7 @@ header {
 .btnSubmitSearch {
   margin-left: 3px;
   width: 25px;
-  height: 24 px;
+  height: 24px;
 }
 
 main {
@@ -53,6 +53,7 @@ main {
   width: fit-content; /*sin esto el fondo se iba a la derecha hasta el infinito no sé por qué */
   font-size: large; /*large sigue siendo más chico que el default de h1*/
 }
+
 .descripcion {
   font-size: 15px;
   text-align: center;
@@ -87,3 +88,46 @@ main {
 .celeste {
   background-color: #abe0e5;
 } /*Combinados hacen "cuadrado celeste"*/
+
+aside {
+  display: flex;
+  flex-direction: column;
+  background-color: #e6e5e5;
+  width: 15em;
+  left: 10em;
+  margin-right: 1.5em;
+}
+
+.articulo-costado {
+  display: flex;
+  flex-direction: row;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.titulo-y-desc-chico {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.titulo-blanco-chico {
+  background-color: white;
+  font-size: medium;
+  width: fit-content;
+}
+
+.descripcion-chica {
+  font-size: small;
+}
+
+.rectangulo-chico {
+  width: 128px;
+  height: 64px;
+  background-color: #ff00ff;
+}
+
+.gris-oscuro {
+  background-color: #cccbca;
+}
