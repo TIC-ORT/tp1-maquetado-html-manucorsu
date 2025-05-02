@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <script>
+      let arreglarWarningFirefox =
+        "ver https://stackoverflow.com/questions/21147149/flash-of-unstyled-content-fouc-in-firefox-only-is-ff-slow-renderer";
+    </script>
     <header>
       <input
         type="text"
@@ -21,7 +25,8 @@
     <div class="padre-flex">
       <main>
         <section class="info-video">
-          <h1 class="titulo-rojo">Boca yo te amo</h1>
+          <h2 class="titulo-rojo">Boca yo te amo</h2>
+          <!-- Cambié de h1 a h2 para que desaparezca este warning de firefox también: https://groups.google.com/a/chromium.org/g/blink-dev/c/OWd80XhwHrI/m/6drotO_7AwAJ?pli=1 -->
           <p class="descripcion">
             La realidad es que no entendí si querías que los textos tuvieran
             texto de relleno o que sean lineitas siguiendo estrictamente la
@@ -31,11 +36,13 @@
             ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </section>
-        <!-- No tiene que tener funcionalidad,
-         pero <video> es más semántico que <section class="video"> ;-->
-        <video width="640" height="360" controls>
-          <source src="./assets/boca.mp4" type="video/mp4" />
-        </video>
+        <div class="video-container">
+          <!-- No tiene que tener funcionalidad,
+          pero <video> es más semántico que <section class="video"> ;-->
+          <video width="640" height="360" controls class="main-video">
+            <source src="./assets/boca.mp4" type="video/mp4" />
+          </video>
+        </div>
         <section class="comentarios">
           <div class="comentario">
             <div class="cuadrado celeste"></div>
@@ -74,7 +81,9 @@
       </main>
       <aside>
         <div class="articulo-costado">
-          <div class="rectangulo-chico gris-oscuro"></div>
+          <div class="thumbnail-container">
+            <div class="rectangulo-chico gris-oscuro"></div>
+          </div>
           <div class="titulo-y-desc-chico">
             <h2 class="titulo-blanco-chico">Lorem, ipsum</h2>
             <p class="descripcion-chica">
@@ -83,7 +92,9 @@
           </div>
         </div>
         <div class="articulo-costado">
-          <div class="rectangulo-chico gris-oscuro"></div>
+          <div class="thumbnail-container">
+            <div class="rectangulo-chico gris-oscuro"></div>
+          </div>
           <div class="titulo-y-desc-chico">
             <h2 class="titulo-blanco-chico">Lorem, ipsum</h2>
             <p class="descripcion-chica">
@@ -92,7 +103,9 @@
           </div>
         </div>
         <div class="articulo-costado">
-          <div class="rectangulo-chico gris-oscuro"></div>
+          <div class="thumbnail-container">
+            <div class="rectangulo-chico gris-oscuro"></div>
+          </div>
           <div class="titulo-y-desc-chico">
             <h2 class="titulo-blanco-chico">Lorem, ipsum</h2>
             <p class="descripcion-chica">
@@ -101,7 +114,9 @@
           </div>
         </div>
         <div class="articulo-costado">
-          <div class="rectangulo-chico gris-oscuro"></div>
+          <div class="thumbnail-container">
+            <div class="rectangulo-chico gris-oscuro"></div>
+          </div>
           <div class="titulo-y-desc-chico">
             <h2 class="titulo-blanco-chico">Lorem, ipsum</h2>
             <p class="descripcion-chica">
@@ -110,7 +125,9 @@
           </div>
         </div>
         <div class="articulo-costado">
-          <div class="rectangulo-chico gris-oscuro"></div>
+          <div class="thumbnail-container">
+            <div class="rectangulo-chico gris-oscuro"></div>
+          </div>
           <div class="titulo-y-desc-chico">
             <h2 class="titulo-blanco-chico">Lorem, ipsum</h2>
             <p class="descripcion-chica">
@@ -119,7 +136,9 @@
           </div>
         </div>
         <div class="articulo-costado">
-          <div class="rectangulo-chico gris-oscuro"></div>
+          <div class="thumbnail-container">
+            <div class="rectangulo-chico gris-oscuro"></div>
+          </div>
           <div class="titulo-y-desc-chico">
             <h2 class="titulo-blanco-chico">Lorem, ipsum</h2>
             <p class="descripcion-chica">

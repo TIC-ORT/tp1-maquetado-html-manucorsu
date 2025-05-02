@@ -37,7 +37,7 @@ header {
 
 main {
   background-color: #f2f2f2;
-  margin-left: 2em;
+  margin-left: 10em;
   width: 70em;
 }
 
@@ -45,6 +45,14 @@ main {
   display: flex;
   flex-direction: column;
   padding-top: 25px;
+  padding-left: 25px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.main-video {
   padding-left: 25px;
 }
 
@@ -64,6 +72,8 @@ main {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 14em;
 }
 
 .comentario {
@@ -93,9 +103,8 @@ aside {
   display: flex;
   flex-direction: column;
   background-color: #e6e5e5;
-  width: 15em;
-  left: 10em;
-  margin-right: 1.5em;
+  width: 20em;
+  margin-right: 10em;
 }
 
 .articulo-costado {
@@ -104,6 +113,7 @@ aside {
   padding-left: 15px;
   padding-top: 10px;
   padding-bottom: 30px;
+  padding-right: 10px;
 }
 
 .titulo-y-desc-chico {
@@ -122,9 +132,14 @@ aside {
   font-size: small;
 }
 
+.thumbnail-container {
+  display: flex;
+  align-items: center;
+}
+
 .rectangulo-chico {
-  width: 128px;
-  height: 64px;
+  width: 120px;
+  height: 60px;
   background-color: #ff00ff;
 }
 
